@@ -508,7 +508,8 @@
           </div>
 	      </div>
 
-      <form action="https://formspree.io/f/xaylqrgb" method="POST" role="form" class="php-email-form mt-4">
+      <form name="simple-contact-form" accept-charset="utl-8" action="https://formspree.io/f/xaylqrgb" method="POST" role="form" class="php-email-form mt-4">
+	 <fieldset>
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="full-name" placeholder="Your Name" required>
@@ -518,9 +519,11 @@
           </div>
         </div>
         <div class="form-group mt-3">
-          <textarea class="form-control" name="_subject" id="email-subject" rows="5" placeholder="Message" required></textarea>
+          <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+	<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
         </div>
-        <div class="text-center"><button type="submit" value="Sumbit">Send Message</button></div>
+	      </fieldset>
+        <div class="text-center"><input type="submit" value="Sumbit">Send Message</input></div>
       </form>
 	      
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylqrgb" method="post">
