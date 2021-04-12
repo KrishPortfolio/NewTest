@@ -508,8 +508,8 @@
           </div>
 	      </div>
 
-      <form name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylqrgb" method="POST" role="form" class="php-email-form mt-4">
-	 <fieldset>
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylqrgb" method="POST" role="form" class="php-email-form mt-4">
+	 <fieldset id="fs-frm-inputs">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="full-name" placeholder="Your Name" required>
@@ -530,15 +530,14 @@
 	      
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylqrgb" method="post">
   <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last Name" required>
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required>
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Please Type your Message Here" required></textarea>
+    <input type="text" name="name" class="form-control" id="full-name" placeholder="First and Last Name" required>
+    <input type="email" name="_replyto" class="form-control" id="email-address" placeholder="email@domain.tld" required>
+    <textarea rows="5" name="message" id="message" class="form-control" placeholder="Please Type your Message Here" required></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
+	<div class="text-center">
   <input type="submit" value="Submit">
+	</div>
 </form>
 
     </div>
